@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mad_lab_assignment_2/task_1_to_6/task1_screen.dart';
+import 'package:mad_lab_assignment_2/task_1_to_6/task2_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -23,7 +23,7 @@ primarySwatch: Colors.blue,
 
 
 ),
-home: const Task1HomeScreen(),
+home: const Task2HomeScreen(),
 
 );
 

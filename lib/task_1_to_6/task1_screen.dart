@@ -28,7 +28,7 @@ class _Task1HomeScreenState extends State<Task1HomeScreen> {
         backgroundColor: Colors.blue.shade100,
       ),
       body: Padding(
-        padding: EdgeInsetsGeometry.all(200.0),
+        padding: EdgeInsetsGeometry.all(28.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -66,7 +66,7 @@ class _Task1HomeScreenState extends State<Task1HomeScreen> {
 
                
               },
-              child: const Text('Send to Display screen -->'),
+              child: const Text('Send to Display screen'),
             ),
           ],
         ),

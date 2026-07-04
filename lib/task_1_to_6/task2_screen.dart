@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mad_lab_assignment_2/task_1_to_6/task2_profilescreen.dart' show Task2DisplayScreen, Task2ProfileScreen;
+import 'package:mad_lab_assignment_2/task_1_to_6/task2_profilescreen.dart' ;
 
 class Task2HomeScreen extends StatefulWidget {
   const Task2HomeScreen({super.key});

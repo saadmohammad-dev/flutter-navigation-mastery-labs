@@ -35,7 +35,7 @@ class _Task1DisplayScreenState extends State<Task1DisplayScreen> {
         backgroundColor: Colors.green.shade100,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(200.0),
+        padding: const EdgeInsets.all(29.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -54,7 +54,7 @@ class _Task1DisplayScreenState extends State<Task1DisplayScreen> {
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
 
-              child: Text("<-  Back"),
+              child: Text(" Back"),
             ),
           ],
         ),

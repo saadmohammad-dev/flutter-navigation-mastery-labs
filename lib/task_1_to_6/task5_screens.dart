@@ -73,11 +73,7 @@ class _Task5HomeScreenState extends State<Task5HomeScreen> {
 
 
 
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey.shade400,
-                  foregroundColor: Colors.black,
-                ),
+              ElevatedButton (
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -104,6 +100,7 @@ class Task5DisplayScreen extends StatelessWidget {
   final String stringOne;
   final String stringTwo;
 final String stringthree;
+
   const Task5DisplayScreen({
     super.key,
     required this.stringOne,

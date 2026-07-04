@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-
+import 'package:mad_lab_assignment_2/task6_screens.dart';
 import 'task_1_to_6/task1_screen.dart'; 
 import 'task_1_to_6/task2_screen.dart';
 import 'task_1_to_6/task3_screens.dart';
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
         '/task3': (context) => const Task3InputScreens(),
         '/task4': (context) => const Task4MainScreen(),
         '/task5': (context) => const Task5HomeScreen (),
-        '/task6': (context) => const  PlaceholderScreen(title: "Task 6"),
+        '/task6': (context) => const  Task6HomeScreen(),
         '/task7': (context) => const PlaceholderScreen(title: "Task 7"),
         '/task8': (context) => const PlaceholderScreen(title: "Task 8"),
         '/task9': (context) => const PlaceholderScreen(title: "Task 9"),
@@ -45,6 +44,8 @@ class MyApp extends StatelessWidget {
         '/task12': (context) => const PlaceholderScreen(title: "Task 12"),
         '/task13': (context) => const PlaceholderScreen(title: "Task 13"),
         '/task14': (context) => const PlaceholderScreen(title: "Task 14"),
+        '/task15': (context) => const PlaceholderScreen(title: "Task 15"),
+
       },
     );
   }
@@ -61,7 +62,7 @@ class DashboardScreen extends StatelessWidget {
         child: Container(
           alignment: Alignment.center,
           margin: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
-          color: const Color(0xFF98FB98).withOpacity(0.6), // Pale green header from your screenshot
+          color: const Color(0xFF98FB98).withOpacity(0.6), 
           child: const Text(
             'MAD Lab 2 Dashboard',
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400, color: Colors.black87),
@@ -77,11 +78,11 @@ class DashboardScreen extends StatelessWidget {
             mainAxisSpacing: 16,
             childAspectRatio: 1.4,
           ),
-          itemCount: 14,
+          itemCount: 15,
           itemBuilder: (context, index) {
             final int taskNumber = index + 1;
             return Card(
-              color: const Color(0xFFEDF1F2), // Card tint matching your UI
+              color: const Color(0xFFEDF1F2), 
               elevation: 0,
               shape: RoundedRectangleBorder(
                 side: const BorderSide(color: Color(0xFFE0E0E0), width: 1),

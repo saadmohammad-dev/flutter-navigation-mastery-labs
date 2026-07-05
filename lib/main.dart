@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         '/task4': (context) => const Task4MainScreen(),
         '/task5': (context) => const Task5HomeScreen (),
         '/task6': (context) => const  Task6HomeScreen(),
-        // '/task7': (context) => const Task7HomeScreen(),
+         '/task7': (context) => const Task7HomeScreen(),
         '/task8': (context) => const PlaceholderScreen(title: "Task 8"),
         '/task9': (context) => const PlaceholderScreen(title: "Task 9"),
         '/task10': (context) => const PlaceholderScreen(title: "Task 10"),

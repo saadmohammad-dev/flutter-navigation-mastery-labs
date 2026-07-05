@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mad_lab_assignment_2/task_1_to_6/task6_screens.dart';
 import 'package:mad_lab_assignment_2/task_7_ecom/task7_home.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/task_tab_screens.dart';
 import 'task_1_to_6/task1_screen.dart'; 
 import 'task_1_to_6/task2_screen.dart';
 import 'task_1_to_6/task3_screens.dart';
@@ -27,7 +28,9 @@ class MyApp extends StatelessWidget {
       
       initialRoute: '/',
       routes: {
-        '/': (context) => const DashboardScreen(),
+                '/': (context) => const  Task8_MainScreen(),
+
+        //'/': (context) => const DashboardScreen(),
        '/task1': (context) => const Task1HomeScreen(), 
         
 
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
         '/task5': (context) => const Task5HomeScreen (),
         '/task6': (context) => const  Task6HomeScreen(),
          '/task7': (context) => const Task7HomeScreen(),
-        '/task8': (context) => const PlaceholderScreen(title: "Task 8"),
+        '/task8': (context) => const  Task8_MainScreen(),
         '/task9': (context) => const PlaceholderScreen(title: "Task 9"),
         '/task10': (context) => const PlaceholderScreen(title: "Task 10"),
         '/task11': (context) => const PlaceholderScreen(title: "Task 11"),

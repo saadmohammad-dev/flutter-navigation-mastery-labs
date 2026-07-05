@@ -20,8 +20,10 @@ class _Task3InputScreens extends State<Task3InputScreens> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text(
-          'Task 3:                                                                       Input Screen ',
+          
+          'Task 3:Input Screen ',
         ),
         backgroundColor: Colors.green.shade100,
       ),
@@ -117,8 +119,10 @@ class Task3DisplayScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+                centerTitle: true,
+
         title: const Text(
-          'Task 3:                                      Display Screen',
+          'Task 3:Display Screen',
         ),
         backgroundColor: Colors.green.shade100,
       ),

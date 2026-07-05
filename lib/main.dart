@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mad_lab_assignment_2/task6_screens.dart';
+import 'package:mad_lab_assignment_2/task_1_to_6/task6_screens.dart';
+import 'package:mad_lab_assignment_2/task_7_ecom/task7_home.dart';
 import 'task_1_to_6/task1_screen.dart'; 
 import 'task_1_to_6/task2_screen.dart';
 import 'task_1_to_6/task3_screens.dart';
@@ -21,22 +22,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        primaryColor: const Color(0xFF7FFFD4), // Aquamarine look matching your screenshot
+        primaryColor: const Color(0xFF7FFFD4), 
       ),
       
-      // Centralized Navigation System
       initialRoute: '/',
       routes: {
         '/': (context) => const DashboardScreen(),
        '/task1': (context) => const Task1HomeScreen(), 
         
-        // Placeholders for remaining tasks to prevent compile errors
+
           '/task2': (context) => const Task2HomeScreen(),
         '/task3': (context) => const Task3InputScreens(),
         '/task4': (context) => const Task4MainScreen(),
         '/task5': (context) => const Task5HomeScreen (),
         '/task6': (context) => const  Task6HomeScreen(),
-        '/task7': (context) => const PlaceholderScreen(title: "Task 7"),
+        // '/task7': (context) => const Task7HomeScreen(),
         '/task8': (context) => const PlaceholderScreen(title: "Task 8"),
         '/task9': (context) => const PlaceholderScreen(title: "Task 9"),
         '/task10': (context) => const PlaceholderScreen(title: "Task 10"),
@@ -58,17 +58,34 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60.0),
-        child: Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
-          color: const Color(0xFF98FB98).withOpacity(0.6), 
-          child: const Text(
-            'MAD Lab 2 Dashboard',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400, color: Colors.black87),
+  preferredSize: const Size.fromHeight(60.0),
+  child: Container(
+    alignment: Alignment.center,
+    padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+    color: const Color(0xFF98FB98).withOpacity(0.6), 
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: Image.network(
+'https://www.comsats.edu.pk/images/logo.png',
+            width: 35,
+            height: 35,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) => Icon(Icons.image),
           ),
         ),
-      ),
+        const SizedBox(width: 10),
+      
+        const Text(
+          'MAD Lab 2 Dashboard',
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400, color: Colors.black87),
+        ),
+      ],
+    ),
+  ),
+),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.builder(
@@ -113,7 +130,7 @@ class PlaceholderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: Text('$title:   Implementation Coming Soon!')),
       body: Center(child: Text('$title is under construction.')),
     );
   }

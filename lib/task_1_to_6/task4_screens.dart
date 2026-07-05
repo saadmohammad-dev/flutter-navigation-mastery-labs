@@ -15,7 +15,7 @@ class _Task4MainScreen extends State<Task4MainScreen> {
   Widget build(BuildContext) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Task:4                     Main Layout',
+        title: const Text('Task:4  Main Layout',
         ),
         backgroundColor: Colors.green.shade100,
       ),

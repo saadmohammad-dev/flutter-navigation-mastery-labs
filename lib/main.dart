@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mad_lab_assignment_2/task_1_to_6/task6_screens.dart';
 import 'package:mad_lab_assignment_2/task_7_ecom/task7_home.dart';
-import 'package:mad_lab_assignment_2/task_8_to_15/Task9_MainGroupControllerScreen.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/Task11DrawerScreen.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/Task10_MainGroupControllerScreen.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/task10_tab_group_hosts.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/tack_9auth_search_screen.dart';
-import 'package:mad_lab_assignment_2/task_8_to_15/task_tab_screens.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/task8_tab_screens.dart';
 import 'task_1_to_6/task1_screen.dart'; 
 import 'task_1_to_6/task2_screen.dart';
 import 'task_1_to_6/task3_screens.dart';
@@ -42,9 +44,9 @@ class MyApp extends StatelessWidget {
         '/task6': (context) => const  Task6HomeScreen(),
          '/task7': (context) => const Task7HomeScreen(),
         '/task8': (context) => const  Task8_MainScreen(),
-        '/task9': (context) => const   Task9_MainGroupControllerScreen(),
-        '/task10': (context) => const PlaceholderScreen(title: "Task 10"),
-        '/task11': (context) => const PlaceholderScreen(title: "Task 11"),
+        '/task9': (context) => const  Task9AuthSearchScreen(),
+        '/task10': (context) => const Task10_MainGroupControllerScreen(),
+        '/task11': (context) => const Task11DrawerScreen(),
         '/task12': (context) => const PlaceholderScreen(title: "Task 12"),
         '/task13': (context) => const PlaceholderScreen(title: "Task 13"),
         '/task14': (context) => const PlaceholderScreen(title: "Task 14"),

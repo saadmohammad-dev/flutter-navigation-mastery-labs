@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mad_lab_assignment_2/task13_form/input_screen.dart';
 import 'package:mad_lab_assignment_2/task_1_to_6/task6_screens.dart';
 import 'package:mad_lab_assignment_2/task_7_ecom/task7_home.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/Task11DrawerScreen.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
         '/task10': (context) => const Task10_MainGroupControllerScreen(),
         '/task11': (context) => const Task11DrawerScreen(),
         '/task12': (context) => const Task12GroupedDrawersScreen(),
-        '/task13': (context) => const PlaceholderScreen(title: "Task 13"),
+        '/task13': (context) => const InputScreen(),
         '/task14': (context) => const Screen1(),
         '/task15': (context) => const PlaceholderScreen(title: "Task 15"),
 

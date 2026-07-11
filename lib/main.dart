@@ -3,8 +3,8 @@ import 'package:mad_lab_assignment_2/task_1_to_6/task6_screens.dart';
 import 'package:mad_lab_assignment_2/task_7_ecom/task7_home.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/Task11DrawerScreen.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/Task10_MainGroupControllerScreen.dart';
-import 'package:mad_lab_assignment_2/task_8_to_15/task10_tab_group_hosts.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/tack_9auth_search_screen.dart';
+import 'package:mad_lab_assignment_2/task_8_to_15/task12_drawers.dart';
 import 'package:mad_lab_assignment_2/task_8_to_15/task8_tab_screens.dart';
 import 'task_1_to_6/task1_screen.dart'; 
 import 'task_1_to_6/task2_screen.dart';
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
         '/task9': (context) => const  Task9AuthSearchScreen(),
         '/task10': (context) => const Task10_MainGroupControllerScreen(),
         '/task11': (context) => const Task11DrawerScreen(),
-        '/task12': (context) => const PlaceholderScreen(title: "Task 12"),
+        '/task12': (context) => const Task12GroupedDrawersScreen(),
         '/task13': (context) => const PlaceholderScreen(title: "Task 13"),
         '/task14': (context) => const PlaceholderScreen(title: "Task 14"),
         '/task15': (context) => const PlaceholderScreen(title: "Task 15"),
@@ -56,6 +56,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});

@@ -12,6 +12,8 @@ import 'task_1_to_6/task3_screens.dart';
 import 'package:mad_lab_assignment_2/task_1_to_6/task4_screens.dart';
 import 'package:mad_lab_assignment_2/task_1_to_6/task5_screens.dart';
 
+import 'task_8_to_15/task14_share.dart' show Screen1, ScreenOne;
+
 
 void main() {
   runApp(const MyApp());
@@ -49,7 +51,7 @@ class MyApp extends StatelessWidget {
         '/task11': (context) => const Task11DrawerScreen(),
         '/task12': (context) => const Task12GroupedDrawersScreen(),
         '/task13': (context) => const PlaceholderScreen(title: "Task 13"),
-        '/task14': (context) => const PlaceholderScreen(title: "Task 14"),
+        '/task14': (context) => const Screen1(),
         '/task15': (context) => const PlaceholderScreen(title: "Task 15"),
 
       },
